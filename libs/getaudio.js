@@ -3,8 +3,9 @@
 //####################################################################################
 class cGetAudioBuffer
 {
-    constructor(Size)
+    constructor(Size,Fsample_Hz)
     {
+        this.Fsample_Hz = Fsample_Hz;
         this.Size = Size;
         this.Idx = 0;
         this.Data = new Float32Array(Size);
@@ -76,6 +77,12 @@ function getAudioReturnBuffer()
     return getAudioBuffer;
 }
 
+//####################################################################################
+function getAudioReturnIsReady()
+{
+    return isGetAudioReady;
+}
+
 
 //####################################################################################
 function getAudioInit(BufferSizer_s)
@@ -132,7 +139,7 @@ function getAudioInit(BufferSizer_s)
         context.audioWorklet.addModule('libs/getaudio-worklet.js').then(() => 
         {
             isGetAudioReady = true;
-            getAudioBuffer = new cGetAudioBuffer(context.sampleRate*BufferSizer_s);
+            getAudioBuffer = new cGetAudioBuffer(context.sampleRate*BufferSizer_s,context.sampleRate);
             console.log("Input audio Ready!");
             getAudioNode = new AudioWorkletNode(context, 'getaudio-worklet');
             source.connect(getAudioNode);

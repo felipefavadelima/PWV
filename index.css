@@ -1,0 +1,61 @@
+.btn {
+    position: relative;
+    background-color: rgb(33, 80, 32);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: left;
+  }
+
+  .btn:hover {
+    background-color: rgb(59, 161, 65);
+  }
+
+  .btn:disabled{
+    background-color: rgb(68, 82, 69);
+  }
+
+  .txt_bold{
+    position: relative;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.8px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .txt_normal{
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.8px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .plotArea {
+    height: 200px;
+    width: 50%;
+  }

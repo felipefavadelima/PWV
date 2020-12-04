@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" src="libs/chart.css" />
+    <link rel="stylesheet" src="./libs/dygraph.css" type="text/css"/>
+    <link rel="stylesheet" href="./index.css" type="text/css"/>
     <meta charset="UTF-8">
 </head> 
 <body>
-    <p>Plot Data</p>
-    <!--Button GET DATA--> 
-    <button id="indexGetDataBut" onclick="indexGetDataBut()" type="button">GET DATA</button> 
+    <p class="txt_bold"> PWV - Analyser</p>
     <!--Plot Area--> 
-    <div id="indexPlot" class="container-fluid"></div>
+    <p><div id="indexPlot" class="plotArea"></div></p>
+    <!--Button GET DATA--> 
+    <button id="indexGetDataBut" onclick="indexGetDataBut()" type="button"  class="btn" disabled>GET RAW DATA</button> 
+    <!--Button PROCESS PROBE 1--> 
+    <button id="indexProcessProbe1But" onclick="indexProcessProbe1But()" type="button" class="btn" disabled>PROCESS PROBE 1</button> 
+    <!--<p class="txt_normal"> Please, to run local, about:config -> security.fileuri.strict_origin_policy -> false</p>-->
+
 </body>
 <!--JS code--> 
-<script type="text/javascript" src="libs/chart.js"></script>
+<script type="text/javascript" src="libs/dygraph.js"></script>
 <script type="text/javascript" src="libs/getaudio.js"></script>
+<script type="text/javascript" src="libs/fili.min.js"></script>
+<script type="text/javascript" src="processData.js"></script>
+<script type="text/javascript" src="plot.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </html>
