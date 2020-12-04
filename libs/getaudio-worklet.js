@@ -36,7 +36,7 @@ audio into it, and schedule the values for 'isRecording' parameter:
       
 */
 
-class RecorderWorkletProcessor extends AudioWorkletProcessor {
+class getAudioWorkletProcessor extends AudioWorkletProcessor {
   static get parameterDescriptors() {
     return [{
       name: 'isRecording',
@@ -116,4 +116,4 @@ class RecorderWorkletProcessor extends AudioWorkletProcessor {
 
 }
 
-registerProcessor('recorder-worklet', RecorderWorkletProcessor);
+registerProcessor('getaudio-worklet', getAudioWorkletProcessor);

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" src="libs/dygraph.css" />
+    <link rel="stylesheet" src="libs/chart.css" />
     <meta charset="UTF-8">
 </head> 
 <body>
     <p>Plot Data</p>
-    <div id="MainPlot" class="container-fluid"></div>
-
-    <button id="StartBut" onclick="StartBut()">Start</button> 
-    <button id="StopBut" onclick="StopBut()">Stop</button> 
+    <!--Button GET DATA--> 
+    <button id="indexGetDataBut" onclick="indexGetDataBut()" type="button">GET DATA</button> 
+    <!--Plot Area--> 
+    <div id="indexPlot" class="container-fluid"></div>
 </body>
-<!--JS CODES--> -->
-<script type="text/javascript" src="libs/dygraph.js"></script>
+<!--JS code--> 
+<script type="text/javascript" src="libs/chart.js"></script>
+<script type="text/javascript" src="libs/getaudio.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </html>
